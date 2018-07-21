@@ -19,7 +19,7 @@ public class RecyclerViewTest {
 
 
     @Test
-    public void onArticleCardClickListener() throws Exception {
+    public void recyclerViewScrollTest() throws Exception {
 
         Espresso.onView(ViewMatchers.withId(R.id.rv_articlelist))
                 .perform(RecyclerViewActions.scrollToPosition(10));

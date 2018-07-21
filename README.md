@@ -26,26 +26,11 @@ Inside AndroidTest multiple unit test files are avaiable for all parts of projec
 It will show run option with file name, click on run button to run all unit test case inside file. 
 
 
+***code coverage reports***
+All the coverage reports are generated and placed in app folder than build folder and inside build there is reports folder
+In reports folder Just open the index.html for overallreport but for individual package and classes you can check adjucent files.
+
 ***Generate coverage reports***
-
-The android gradle plugin has a built-in feature.
-
-Just set testCoverageEnabled parameter to true in your build.gradle file:
-
-android {
-   buildTypes {
-      debug {
-         testCoverageEnabled = true
-      }
-   }
-}
-Then use:
-
-./gradlew connectedCheck
-or
-
-./gradlew createDebugCoverageReport
-It will produce a test coverage report in the directory of the module:
-
-/build/outputs/reports/coverage/debug/
-Just open the index.html
+To generate coverage reports click on gradle button on right top corner than click on green icon,
+after this box appear with project name , in command file write "createDebugAndroidTestCoverageReport" and press ok.
+It will create code coverage reports.
